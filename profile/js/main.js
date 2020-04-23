@@ -139,3 +139,85 @@
     });
 
 })(jQuery);
+
+//edit categories
+
+let pe = document.getElementById('photo-editing');
+let ve = document.getElementById('video-editing');
+let pd = document.getElementById('print-designs');
+let ga = document.getElementById('graphic-arts');
+// let id = document.getElementById('interior-design');
+// let il = document.getElementById('illustration');
+// let ph = document.getElementById('photography');
+// let ld = document.getElementById('logo-designing');
+
+function showPE(){
+    if(pe.checked){
+        document.getElementById('photo-editing-1').disabled = false;
+        document.getElementById('photo-editing-2').disabled = false;
+        document.getElementById('photo-editing-3').disabled = false;
+        document.getElementById('photo-editing-4').disabled = false;
+        document.getElementById('photo-editing-5').disabled = false;
+        document.getElementById('photo-editing-6').disabled = false;
+    }else{
+        document.getElementById('photo-editing-1').disabled = true;
+        document.getElementById('photo-editing-2').disabled = true;
+        document.getElementById('photo-editing-3').disabled = true;
+        document.getElementById('photo-editing-4').disabled = true;
+        document.getElementById('photo-editing-5').disabled = true;
+        document.getElementById('photo-editing-6').disabled = true;
+    }
+}
+function showVE(){
+    if(ve.checked){
+        document.getElementById('video-editing-1').disabled = false;
+        document.getElementById('video-editing-2').disabled = false;
+        document.getElementById('video-editing-3').disabled = false;
+        document.getElementById('video-editing-4').disabled = false;
+        document.getElementById('video-editing-5').disabled = false;
+    }else{
+        document.getElementById('video-editing-1').disabled = true;
+        document.getElementById('video-editing-2').disabled = true;
+        document.getElementById('video-editing-3').disabled = true;
+        document.getElementById('video-editing-4').disabled = true;
+        document.getElementById('video-editing-5').disabled = true;
+    }
+}
+function showPD(){
+    if(pd.checked){
+        document.getElementById('print-designs-1').disabled = false;
+        document.getElementById('print-designs-2').disabled = false;
+        document.getElementById('print-designs-3').disabled = false;
+        document.getElementById('print-designs-4').disabled = false;
+        document.getElementById('print-designs-5').disabled = false;
+        document.getElementById('print-designs-6').disabled = false;
+        document.getElementById('print-designs-7').disabled = false;
+        document.getElementById('print-designs-8').disabled = false;
+    }else{
+    document.getElementById('print-designs-1').disabled = true;
+    document.getElementById('print-designs-2').disabled = true;
+    document.getElementById('print-designs-3').disabled = true;
+    document.getElementById('print-designs-4').disabled = true;
+    document.getElementById('print-designs-5').disabled = true;
+    document.getElementById('print-designs-6').disabled = true;
+    document.getElementById('print-designs-7').disabled = true;
+    document.getElementById('print-designs-8').disabled = true;
+    }
+}
+function showGA(){
+    if(ga.checked){
+        document.getElementById('graphic-arts-1').disabled = false;
+        document.getElementById('graphic-arts-2').disabled = false;
+        document.getElementById('graphic-arts-3').disabled = false;
+        document.getElementById('graphic-arts-4').disabled = false;
+    }else{
+        document.getElementById('graphic-arts-1').disabled = true;
+        document.getElementById('graphic-arts-2').disabled = true;
+        document.getElementById('graphic-arts-3').disabled = true;
+        document.getElementById('graphic-arts-4').disabled = true;
+    }
+}
+showPE();
+showVE();
+showPD();
+showGA();
